@@ -31,9 +31,9 @@ jobs:
         run: python -m unittest discover
 
       - name: Run lint
-        run: |
-          pip install flake8
-          flake8 .
+        - run: |
+          pip install pytest
+          pytest
 
   docker-build:
     runs-on: ubuntu-latest
