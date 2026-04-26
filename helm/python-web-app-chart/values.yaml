@@ -8,7 +8,7 @@ image:
   repository: apekshaa6/python-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "24960541313"
+  tag: "24960653136"
 
 ingress:
   enabled: false
