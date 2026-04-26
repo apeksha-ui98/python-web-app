@@ -1,0 +1,27 @@
+# Deployment manifest for Python web application
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: python-web-app
+  labels:
+    app: python-web-app
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: python-web-app
+
+  template:
+    metadata:
+      labels:
+        app: python-web-app
+
+    spec:
+      containers:
+      - name: python-web-app
+        image: apekshaa6/python-web-app:v1
+        ports:
+        - containerPort: 8080
