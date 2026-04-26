@@ -7,4 +7,3 @@ def test_home():
 
     assert response.status_code == 200
     assert "text/html" in response.content_type
-    
