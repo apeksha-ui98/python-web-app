@@ -27,21 +27,37 @@ build → code-quality → push → update-newtag-in-helm-chart
 
 ## Project Structure
 python-web-app/
+
 ├── app.py                        # Flask application
+
 ├── static/                       # HTML pages (home, about, courses, contact)
+
 ├── test_app.py                   # pytest test suite
+
 ├── Dockerfile                    # Container image definition
+
 ├── requirements.txt              # Flask, gunicorn, pytest
+
 ├── .github/
+
 │   └── workflows/
+
 │       └── ci.yaml               # Full CI/CD pipeline definition
+
 ├── k8s/
+
 │   └── manifests/
+
 │       ├── deployment.yaml
+
 │       ├── service.yaml
+
 │       └── ingress.yaml
+
 └── helm/
+
 └── python-web-app-chart/
+
 ## Kubernetes Deployment
 
 - **Deployment** — 1 replica of the app on container port 8080
